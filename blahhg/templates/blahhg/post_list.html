@@ -1,0 +1,34 @@
+
+<html>
+    <head>
+        <title>learning some stuff</title>
+    </head>
+    <body>        
+
+        <div>
+            <p><a href="/">Welcome to the World of Tomorrow!</a></p>
+        </div>
+
+        {% for post in posts %}
+            <div>
+                <h2><a href="">{{ post.title }}</a></h2>
+                <p>{{ post.published_date }}</p>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </div>            
+        {% endfor %}
+
+        <!--
+        <div>            
+            <h2><a href="">a post</a></h2>
+            <p>How much wood would a woodchuck chuck if a woodchuck could chuck wood?</p>
+        </div>
+
+        <div>            
+            <h2><a href="">un puesto</a></h2>
+            <p>Cuánta madera echaría una marmota si una marmota pudiera echar madera?</p>
+        </div>
+        -->
+        
+        <p>Hasta luego...</p>
+    </body>
+</html>
