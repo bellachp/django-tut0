@@ -1,0 +1,35 @@
+
+
+#header {
+    background-color: #EBEFF0;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;    
+}
+
+h2 a {
+    color: #9FCF8F;
+    text-decoration: none;
+}
+
+h3 a {
+    color: #77ABBA;
+    text-decoration: none;
+}
+
+.date {
+    font-weight: bold;
+}
+
+body {
+    padding-left: 30px;
+    padding-right: 300px;
+    font-family: "Palatino Linotype", "Book Antiqua";
+}
+
+#vince-photo {
+    direction: rtl;  
+}
+
+#footer {  
+    color: gray;
+}

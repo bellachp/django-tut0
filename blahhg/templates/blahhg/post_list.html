@@ -4,19 +4,25 @@
 <html>
     <head>
         <title>learning some stuff</title>
+
+        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="{% static 'blahhg/blahhg.css' %}">
+
     </head>
     <body>        
 
-        <div>
-            <p><a href="/">Welcome to the World of Tomorrow!</a></p>
+        <div id="header">
+            <h2><a href="/">Welcome to the World of Tomorrow!</a></h2>
         </div>
 
-        <img src="{% static "blahhg/images/zoom.jpg" %}" alt="Veence" width="30%" height="30%"/>
+        <div id="vince-photo">
+            <img src="{% static "blahhg/images/zoom.jpg" %}" alt="Veence" width="200" height="250"/>
+        </div>
 
         {% for post in posts %}
-            <div>
-                <h2><a href="">{{ post.title }}</a></h2>
-                <p>{{ post.published_date }}</p>
+            <div class="post">
+                <h3><a href="">{{ post.title }}</a></h3>
+                <p class="date">{{ post.published_date }}</p>
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>            
         {% endfor %}
@@ -32,8 +38,9 @@
             <p>Cuánta madera echaría una marmota si una marmota pudiera echar madera?</p>
         </div>
         -->
-        
-        <p>--------------</p>        
-        <p>Hasta luego...</p>
+        <div id="footer">
+            <p>--------------</p>        
+            <p>Hasta luego...</p>
+        </div>
     </body>
 </html>
