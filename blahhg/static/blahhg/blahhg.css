@@ -1,9 +1,16 @@
 
 
-#header {
-    background-color: #EBEFF0;
+/* padding goes top right bottom left */
+
+#header {    
+    background-color: #EBEFF0;      
+    padding: 20px 20px 20px 40px;
     margin-top: 0;
-    padding: 20px 20px 20px 40px;    
+}
+
+#vince-photo {    
+    float: right;
+    padding: 10px 10px 0px 0px; 
 }
 
 h2 a {
@@ -21,13 +28,12 @@ h3 a {
 }
 
 body {
-    padding-left: 30px;
-    padding-right: 300px;
     font-family: "Palatino Linotype", "Book Antiqua";
 }
 
-#vince-photo {
-    direction: rtl;  
+.post {
+    padding-left: 30px;
+    padding-right: 300px;
 }
 
 #footer {  
