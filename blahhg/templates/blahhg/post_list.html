@@ -1,4 +1,6 @@
 
+{% load static %}
+
 <html>
     <head>
         <title>learning some stuff</title>
@@ -8,6 +10,8 @@
         <div>
             <p><a href="/">Welcome to the World of Tomorrow!</a></p>
         </div>
+
+        <img src="{% static "blahhg/images/zoom.jpg" %}" alt="Veence" width="30%" height="30%"/>
 
         {% for post in posts %}
             <div>
@@ -29,6 +33,7 @@
         </div>
         -->
         
+        <p>--------------</p>        
         <p>Hasta luego...</p>
     </body>
 </html>
