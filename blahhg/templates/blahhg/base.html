@@ -1,0 +1,32 @@
+
+{% load static %}
+
+<html>
+    <head>
+        <title>learning some stuff</title>
+
+        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="{% static 'blahhg/blahhg.css' %}">
+
+    </head>
+    <body>        
+
+        <div id="header">
+            <h2><a href="/">some hogwash about the human spirit</a></h2>
+        </div>
+
+        <div id="vince-photo">
+            <img src="{% static "blahhg/images/zoom.jpg" %}" alt="Veence" width="200" height="250"/>
+        </div>
+
+        <div class="content-container">
+            <div class="row">
+                <div class="col-md-8">
+                {% block content %}
+                {% endblock %}
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
