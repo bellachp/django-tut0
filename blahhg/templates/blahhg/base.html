@@ -5,7 +5,7 @@
     <head>
         <title>learning some stuff</title>
 
-        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"> -->
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"> -->
         <link rel="stylesheet" href="{% static 'blahhg/blahhg.css' %}">
 
     </head>
@@ -20,13 +20,9 @@
         </div>
 
         <div class="content-container">
-            <div class="row">
-                <div class="col-md-8">
-                {% block content %}
-                {% endblock %}
-                </div>
-            </div>
+            {% block content %}
+            {% endblock %}
         </div>
-        
+
     </body>
 </html>

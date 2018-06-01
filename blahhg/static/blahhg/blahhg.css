@@ -13,22 +13,22 @@
     padding: 10px 10px 0px 0px; 
 }
 
+body {
+    font-family: "Palatino Linotype", "Book Antiqua";
+}
+
 h2 a {
     color: #9FCF8F;
     text-decoration: none;
 }
 
-h3 a {
+h3 a, h3 {    
     color: #77ABBA;
     text-decoration: none;
 }
 
 .date {
     font-weight: bold;
-}
-
-body {
-    font-family: "Palatino Linotype", "Book Antiqua";
 }
 
 .post {
